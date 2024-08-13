@@ -1,0 +1,2 @@
+ , 0 is returned and the system moves to control states0 if the input is b in state s0.
+ , 1 is returned and location s0 is reached on occurence of a in state control states0.

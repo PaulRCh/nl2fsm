@@ -1,0 +1,4 @@
+ , 0 is returned and the application moves to state s1 if the input is a in  state s0.
+ in  state s1 , 0 is produced and it reaches location s0 if the input a occurs.
+ when it is in state s1 it produces 1 and location s1 is reached if  b occurs.
+ from state s0 it returns 0 and the application reaches s1 on occurence of input b.

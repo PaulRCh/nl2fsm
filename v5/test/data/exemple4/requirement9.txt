@@ -1,0 +1,4 @@
+ the output 1 is produced and state s1 is reached if the input is a in state control states0.
+ from state state s1 the application produces 1 and the system reaches state s1 if the input a occurs.
+ from control states0 the application produces 1 and the system moves to control states0 on occurence of b.
+ in  state s1 , 0 is returned and it reaches location s0 if  b occurs.

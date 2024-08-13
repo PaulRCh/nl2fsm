@@ -1,0 +1,5 @@
+Scores for 5 states: 
+corrected in 0 iterations: 25
+corrected in 1 iterations: 1
+corrected in 3 iterations: 1
+3 machines were not corrected 

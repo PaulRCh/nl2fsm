@@ -1,0 +1,7 @@
+digraph fsm{
+	s_0 [label="s0" shape="circle"]
+	
+	s_0 -> s_0[label="b/0"]
+	
+	s_0 -> s_0[label="a/1"]
+}

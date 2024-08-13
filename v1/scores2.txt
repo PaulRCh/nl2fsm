@@ -1,0 +1,5 @@
+Scores for 10 states: 
+corrected in 1 iterations: 7 
+corrected in 0 iterations: 21 
+corrected in 3 iterations: 1 
+corrected in 2 iterations: 1 

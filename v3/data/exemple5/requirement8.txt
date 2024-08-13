@@ -1,0 +1,21 @@
+ when it is in location 0 the application produces 1 and the application moves to control state1 if the input is a.
+ the application returns 0 and the system reaches 6 if the input a occurs in  state 1.
+ , 1 is returned and the application moves to location 3 if the input b occurs from state 3.
+ from location 3 the system produces 0 and the system reaches location 2 if the input a occurs.
+ when it is in state 1 , 2 is produced and the application moves to location 5 if the input c occurs.
+ , 0 is produced and state 1 is reached if the input is c from location 6.
+ , 1 is produced and the application reaches control state4 if the input b occurs from location 4.
+ from state location 2 the system returns 1 and the application reaches location 6 on occurence of a.
+ the system returns 1 and the system moves to location 3 if the input a occurs from state control state5.
+ from state 2 , 0 is returned and 5 is reached if  c occurs.
+ it returns 2 and it moves to 4 if the input b occurs in  location 6.
+ the system produces 2 and the application moves to control state3 if the input b occurs when the system is in state 0.
+ , 1 is produced and the application reaches state 6 if the input is b from control state1.
+ the application produces 1 and state 3 is reached on occurence of c when it is in 3.
+ the application returns 1 and the application moves to location 0 if the input is b when the system is in location 5.
+ , 0 is returned and control state4 is reached if  c occurs when it is in 4.
+ when the system is in location 0 the application produces 0 and the system reaches location 6 if the input c occurs.
+ when the system is in control state5 , 2 is produced and it reaches 4 if the input is c.
+ the output 0 is produced and the application moves to state 3 on occurence of input a when it is in location 6.
+ when it is in location 4 the application produces 0 and the application reaches state 0 if the input is a.
+ in state control state2 it returns 2 and it moves to location 0 on occurence of b.

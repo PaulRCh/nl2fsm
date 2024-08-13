@@ -1,0 +1,2 @@
+ in  s0 it produces 0 and it moves to control states0 on occurence of b.
+ , 1 is returned and the application reaches state s0 if the input a occurs in state s0.

@@ -1,0 +1,2 @@
+ it produces 0 and control states0 is reached if the input is b from location s0.
+ when the system is in control states0 the output 1 is produced and the application moves to control states0 on occurence of input a.

@@ -1,0 +1,27 @@
+ in state location 1 it returns 0 and the system moves to control state1 if the input is b.
+ the application returns 0 and the application reaches state 4 if the input c occurs from 0.
+ the output 1 is produced and control state2 is reached if the input is a from 1.
+ the output 2 is produced and it moves to control state8 if the input c occurs when it is in state 4.
+ it produces 1 and the application reaches location 1 if the input c occurs when the system is in control state1.
+ the application produces 2 and it reaches location 8 if the input is b when the system is in location 8.
+ when it is in 6 the application returns 2 and location 4 is reached if the input c occurs.
+ from location 0 , 0 is returned and it moves to location 2 on occurence of input b.
+ the application produces 0 and the system reaches control state5 if the input is a from 2.
+ when the system is in control state5 the system returns 1 and the application moves to state 8 on occurence of input c.
+ from state 3 the output 1 is produced and the system reaches control state8 if the input is c.
+ , 1 is returned and the system moves to location 5 if  b occurs when it is in state 5.
+ , 1 is produced and the application moves to state 7 if  c occurs in  location 2.
+ the system produces 0 and state 8 is reached if  a occurs from state state 4.
+ in  3 , 2 is returned and the system moves to state 5 on occurence of b.
+ the output 2 is produced and state 7 is reached on occurence of b when the system is in 4.
+ it produces 0 and it reaches state 6 on occurence of input a in state location 6.
+ when it is in location 5 the output 2 is produced and 1 is reached on occurence of input a.
+ from location 8 the system returns 1 and state 3 is reached if  c occurs.
+ in  location 8 the output 1 is produced and the system reaches location 2 if the input a occurs.
+ it returns 0 and it reaches control state5 if the input b occurs when it is in location 7.
+ , 0 is returned and control state0 is reached if  c occurs from state 7.
+ from control state3 , 1 is returned and it reaches state 1 if  a occurs.
+ the application produces 2 and location 3 is reached if the input a occurs from 7.
+ the output 0 is produced and it moves to state 1 if the input is b in  control state2.
+ the system returns 2 and control state0 is reached if the input is b from location 6.
+ in  control state0 , 2 is produced and it reaches state 7 if  a occurs.

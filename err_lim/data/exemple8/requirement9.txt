@@ -1,0 +1,21 @@
+ the output 2 is produced and the application reaches state 3 if the input is b in state state 1.
+ the output 2 is produced and it moves to control state0 on occurence of input a from state location 6.
+ , 1 is returned and it moves to location 2 if the input is c when it is in state 4.
+ , 0 is produced and the application moves to control state1 if the input b occurs in state location 0.
+ when the system is in control state2 , 1 is returned and state 6 is reached on occurence of input a.
+ when it is in 1 the output 1 is produced and control state5 is reached if the input c occurs.
+ the system produces 0 and state 6 is reached if  c occurs when it is in control state6.
+ from location 3 the system returns 0 and the system reaches 5 on occurence of a.
+ the application produces 0 and 0 is reached if  a occurs when it is in state 4.
+ , 1 is returned and location 0 is reached on occurence of b from state state 6.
+ , 0 is returned and it moves to 4 on occurence of input b in  location 4.
+ from state 5 , 1 is produced and location 2 is reached on occurence of input b.
+ the output 1 is produced and the application moves to state 0 on occurence of b in  3.
+ when it is in 0 the system produces 0 and 2 is reached if the input is a.
+ from state 2 , 0 is produced and it moves to state 5 if  b occurs.
+ the output 2 is produced and location 2 is reached on occurence of input c from state 2.
+ the output 0 is produced and the system moves to control state6 if the input is c when the system is in location 0.
+ in state state 1 it returns 1 and 5 is reached on occurence of input a.
+ in state location 3 , 2 is returned and the application moves to location 3 if  c occurs.
+ when it is in location 5 the output 0 is produced and it moves to 1 if the input is c.
+ from location 5 the application produces 0 and the system reaches state 3 on occurence of input a.

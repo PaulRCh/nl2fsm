@@ -1,0 +1,4 @@
+ from state s0 , 1 is returned and s1 is reached on occurence of a.
+ in  location s0 the application returns 0 and state s0 is reached on occurence of b.
+ the output 0 is produced and state s1 is reached if  b occurs in state s1.
+ in  s1 the output 1 is produced and it reaches s0 if the input a occurs.

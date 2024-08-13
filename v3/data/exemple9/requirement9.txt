@@ -1,0 +1,27 @@
+ from state state 1 it produces 0 and the system reaches state 1 if  b occurs.
+ the output 0 is produced and control state4 is reached if the input is c from control state0.
+ , 1 is returned and the application moves to control state2 if the input a occurs in  control state1.
+ when it is in 4 the application produces 2 and the application moves to state 8 on occurence of input c.
+ from state control state1 the output 1 is produced and 1 is reached if  c occurs.
+ it produces 2 and the system moves to state 8 if the input is b when the system is in location 8.
+ in state 6 the application produces 2 and the system reaches 4 on occurence of input c.
+ from state location 0 the output 0 is produced and the application reaches state 2 if  b occurs.
+ from state state 2 the system produces 0 and the system moves to state 5 if  a occurs.
+ it produces 1 and it reaches control state8 if  c occurs from state 5.
+ the output 1 is produced and 8 is reached on occurence of input c when the system is in control state3.
+ , 1 is produced and control state5 is reached on occurence of b when it is in state 5.
+ from state control state2 it returns 1 and it reaches location 7 on occurence of c.
+ , 0 is produced and the application reaches state 8 on occurence of a from state control state4.
+ , 2 is produced and the application moves to control state5 if the input is b when the system is in state 3.
+ when the system is in control state4 the system returns 2 and the system reaches 7 if the input is b.
+ the system returns 0 and location 6 is reached if the input a occurs when it is in 6.
+ in  5 the application returns 2 and the system reaches location 1 on occurence of input a.
+ when the system is in control state8 the application returns 1 and 3 is reached on occurence of input c.
+ the output 1 is produced and the application moves to control state2 on occurence of a in state control state8.
+ in state control state7 , 0 is produced and the system reaches control state5 if the input is b.
+ in state state 7 the output 0 is produced and 0 is reached on occurence of input c.
+ , 1 is returned and the system moves to 1 if the input a occurs when the system is in control state3.
+ when it is in state 7 , 2 is returned and the system moves to state 3 on occurence of a.
+ the system returns 0 and the system moves to state 1 if the input is b from state 2.
+ the output 2 is produced and the system reaches 0 if the input is b from state 6.
+ when it is in state 0 the output 2 is produced and it moves to state 7 if the input a occurs.

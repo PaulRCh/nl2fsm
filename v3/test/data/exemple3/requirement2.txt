@@ -1,0 +1,6 @@
+ the output 1 is produced and state s2 is reached on occurence of a from s0.
+ when it is in s0 , 0 is returned and it reaches s1 if the input b occurs.
+ it returns 1 and state s2 is reached if  a occurs in state location s1.
+ it returns 1 and location s1 is reached if the input is b in state s2.
+ from location s1 , 0 is returned and it moves to control states0 on occurence of b.
+ , 1 is produced and control states2 is reached if  a occurs in  state s2.

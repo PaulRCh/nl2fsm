@@ -1,0 +1,6 @@
+ when the system is in location s0 it returns 1 and it reaches control states2 if  a occurs.
+ the output 0 is produced and control states1 is reached if  b occurs in  location s0.
+ , 1 is returned and location s2 is reached on occurence of input a when it is in location s1.
+ , 1 is returned and the system reaches control states1 if the input b occurs from location s2.
+ , 0 is produced and it moves to control states0 on occurence of b in state control states1.
+ from location s2 , 1 is returned and it reaches state s2 if  a occurs.

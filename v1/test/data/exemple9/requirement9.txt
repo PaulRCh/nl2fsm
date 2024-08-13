@@ -1,0 +1,2 @@
+ when the system is in s0 , 0 is returned and s0 is reached if  b occurs.
+ in state location s0 the system produces 1 and s0 is reached if the input is a.

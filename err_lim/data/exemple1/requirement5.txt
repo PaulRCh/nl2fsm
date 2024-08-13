@@ -1,0 +1,24 @@
+ the output 2 is produced and 6 is reached on occurence of b when it is in control state7.
+ in  state 5 the application produces 2 and state 7 is reached if  a occurs.
+ it produces 0 and the system moves to 5 if the input is a when the system is in state 4.
+ from state 5 the output 2 is produced and the application moves to location 0 if  c occurs.
+ when it is in control state2 it returns 0 and location 5 is reached on occurence of b.
+ the application returns 0 and 3 is reached if the input is c from state 2.
+ when it is in control state4 , 0 is produced and location 6 is reached if  b occurs.
+ the system produces 2 and state 3 is reached if the input is a from location 6.
+ from state control state1 it produces 0 and state 5 is reached on occurence of a.
+ the application returns 0 and the application reaches 3 on occurence of b from state location 5.
+ from state location 1 the application returns 0 and location 3 is reached if the input b occurs.
+ the system returns 2 and the system reaches control state4 if  a occurs in state location 7.
+ the output 0 is produced and the system moves to location 1 if  c occurs from control state1.
+ the system returns 0 and the system reaches state 4 on occurence of a from state state 0.
+ when it is in control state3 the output 2 is produced and the system reaches 6 if  a occurs.
+ in state location 7 the output 2 is produced and it reaches 6 if  c occurs.
+ , 0 is returned and it reaches state 1 if  c occurs in  3.
+ from state state 6 , 0 is returned and the application reaches control state5 on occurence of input c.
+ the output 1 is produced and it moves to state 3 if  c occurs from state state 0.
+ the output 0 is produced and control state7 is reached on occurence of b when it is in control state0.
+ in state location 4 , 2 is returned and the application reaches state 1 if the input c occurs.
+ in state location 6 it returns 2 and it moves to location 5 if the input is b.
+ from state control state3 the application produces 1 and the system moves to location 1 if  b occurs.
+ , 0 is produced and 0 is reached on occurence of input a from state control state2.

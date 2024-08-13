@@ -1,0 +1,24 @@
+ the output 2 is produced and state 6 is reached if  b occurs when it is in state 7.
+ when it is in state 5 it returns 2 and it reaches state 7 on occurence of a.
+ from state control state4 the output 0 is produced and it reaches location 5 if the input is a.
+ when it is in control state5 the output 2 is produced and the system reaches state 0 if the input c occurs.
+ from state 2 the output 0 is produced and the application moves to location 5 if  b occurs.
+ , 0 is returned and it reaches 3 if the input c occurs from 2.
+ in  4 , 0 is returned and it moves to location 6 if the input b occurs.
+ from state location 6 the output 2 is produced and the system moves to control state3 if the input is a.
+ when the system is in 1 , 0 is produced and 5 is reached on occurence of input a.
+ the system returns 0 and it reaches state 3 if  b occurs from state location 5.
+ the application produces 0 and the application moves to 3 on occurence of input b in state state 1.
+ the output 2 is produced and the application moves to 4 if  a occurs in state state 7.
+ in state state 1 the system returns 0 and 1 is reached on occurence of c.
+ , 0 is returned and it moves to location 4 on occurence of input a when the system is in state 0.
+ the system returns 2 and the application reaches 6 on occurence of input a in state location 3.
+ from location 7 the output 2 is produced and it reaches 6 on occurence of input c.
+ the output 0 is produced and 1 is reached on occurence of c from state state 3.
+ the system returns 0 and state 5 is reached on occurence of input c from state 6.
+ from 0 , 1 is produced and the system reaches state 3 on occurence of c.
+ the application returns 0 and the system reaches state 7 on occurence of input b when it is in location 0.
+ from state location 4 , 2 is returned and the system reaches control state1 if  c occurs.
+ the application produces 2 and the application reaches 5 if  b occurs when it is in state 6.
+ from control state3 it produces 1 and state 1 is reached if the input is b.
+ from 2 the system produces 0 and it reaches 0 on occurence of a.

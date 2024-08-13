@@ -1,0 +1,4 @@
+ when it is in state s0 it returns 1 and the application reaches state s1 on occurence of input a.
+ the system returns 0 and the application reaches location s0 if the input is b from state location s0.
+ when it is in s1 it produces 0 and the system moves to control states1 on occurence of b.
+ when it is in s1 , 1 is produced and the system reaches s0 on occurence of input a.

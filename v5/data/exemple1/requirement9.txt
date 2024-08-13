@@ -1,0 +1,24 @@
+ in  control state7 the output 2 is produced and state 6 is reached if  b occurs.
+ when the system is in 5 the application produces 2 and the application reaches location 7 if the input is a.
+ from state state 4 , 0 is produced and 5 is reached on occurence of a.
+ the system produces 2 and the application moves to 0 if  c occurs in state state 5.
+ in  location 2 it returns 0 and 5 is reached if  b occurs.
+ the application returns 0 and it reaches 3 if  c occurs in  2.
+ it produces 0 and the application reaches control state6 if  b occurs in  4.
+ from 6 it produces 2 and the application reaches control state3 on occurence of a.
+ when the system is in control state1 it produces 0 and control state5 is reached if  a occurs.
+ , 0 is produced and it reaches 3 if the input is b when it is in 5.
+ when the system is in control state1 the application produces 0 and it moves to state 3 on occurence of b.
+ when the system is in location 7 , 2 is returned and the application moves to control state4 on occurence of a.
+ the output 0 is produced and 1 is reached if the input c occurs when it is in location 1.
+ in  location 0 it produces 0 and the system moves to location 4 on occurence of a.
+ in  control state3 the application produces 2 and it reaches control state6 on occurence of input a.
+ when the system is in location 7 , 2 is produced and location 6 is reached on occurence of c.
+ in  3 , 0 is returned and the application reaches control state1 on occurence of c.
+ it produces 0 and the system reaches state 5 if the input is c in  6.
+ when the system is in control state0 the application returns 1 and the application moves to state 3 on occurence of c.
+ in state 0 the output 0 is produced and the system reaches state 7 if the input b occurs.
+ it produces 2 and 1 is reached if the input c occurs in state 4.
+ from control state6 the system produces 2 and 5 is reached on occurence of b.
+ , 1 is produced and the application reaches 1 if the input b occurs from state state 3.
+ in state control state2 , 0 is produced and it reaches state 0 if the input is a.

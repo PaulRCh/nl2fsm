@@ -1,0 +1,4 @@
+ in state s0 , 1 is returned and it reaches location s1 if  a occurs.
+ , 0 is returned and state s0 is reached on occurence of b in  location s0.
+ , 0 is returned and the application reaches s1 on occurence of b when the system is in location s1.
+ , 1 is returned and the system reaches s0 on occurence of input a when the system is in location s1.

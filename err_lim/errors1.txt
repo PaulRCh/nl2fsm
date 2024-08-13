@@ -1,0 +1,12 @@
+Error 1 mean (non-deterministic gen): 0.0 
+Error 2 mean (input diff, missing transition gen): 0.03333333333333333 
+Error 3 mean (output diff): 0.0 
+Error 4 mean (target state diff): 0.0 
+Correct transitions mean: 25.0 
+Max error 1: 0 
+Max error 2: 1 
+Max error 3: 0 
+Max error 4: 0 
+Max correct transitions: 25 
+Max global error: 1 
+Mean error: 0.03333333333333333 

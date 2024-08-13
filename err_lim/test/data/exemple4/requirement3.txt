@@ -1,0 +1,4 @@
+ the system returns 1 and it reaches state s1 if  a occurs when the system is in state s0.
+ the output 1 is produced and the system reaches location s1 if the input a occurs in  s1.
+ , 1 is returned and the application moves to state s0 if  b occurs in  state s0.
+ the application returns 0 and the system moves to state s0 if the input b occurs in state state s1.

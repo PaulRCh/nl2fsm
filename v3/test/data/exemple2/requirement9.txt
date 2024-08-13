@@ -1,0 +1,6 @@
+ the system returns 1 and the system moves to location s1 if the input b occurs from control states0.
+ from state control states0 , 1 is returned and the application moves to control states2 if  a occurs.
+ when it is in control states2 the output 1 is produced and it reaches control states1 if the input is a.
+ , 1 is produced and the system moves to location s2 on occurence of input b from s2.
+ , 0 is produced and location s0 is reached on occurence of input b from control states1.
+ the system produces 0 and location s0 is reached if  a occurs when it is in state s1.

@@ -1,0 +1,2 @@
+ , 0 is returned and the application moves to s0 if the input b occurs when the system is in s0.
+ it produces 1 and it reaches location s0 if  a occurs when it is in state s0.

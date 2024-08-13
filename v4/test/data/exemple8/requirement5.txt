@@ -1,0 +1,4 @@
+ when it is in state s0 , 1 is produced and location s1 is reached if the input is a.
+ , 0 is produced and it reaches control states0 if the input is b in state control states0.
+ the system produces 0 and control states1 is reached if the input b occurs in state state s1.
+ , 1 is produced and it moves to location s0 on occurence of a from state s1.

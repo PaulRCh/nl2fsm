@@ -1,0 +1,4 @@
+ , 1 is returned and s1 is reached if  a occurs from state control states0.
+ from state s1 it produces 1 and it reaches location s1 if the input a occurs.
+ when the system is in control states0 , 1 is returned and state s0 is reached if the input is b.
+ the system produces 0 and it moves to state s0 if the input b occurs in state s1.

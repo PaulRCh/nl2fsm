@@ -1,0 +1,24 @@
+ the output 2 is produced and the application moves to location 6 on occurence of input b from state control state7.
+ in  5 it produces 2 and the application moves to location 7 on occurence of input a.
+ when it is in 4 the system produces 0 and it reaches state 5 if the input a occurs.
+ it produces 2 and 0 is reached if the input c occurs from state state 5.
+ , 0 is returned and the application reaches state 5 if the input is b in state location 2.
+ from state 2 the system produces 0 and it moves to state 3 on occurence of input c.
+ , 0 is returned and it reaches 6 if the input is b in  location 4.
+ the system returns 2 and the application moves to 3 if the input a occurs in state location 6.
+ from 1 , 0 is returned and 5 is reached if the input is a.
+ when it is in 5 , 0 is produced and the system reaches 3 on occurence of b.
+ in  1 the output 0 is produced and control state3 is reached if the input is b.
+ from state control state7 the application returns 2 and control state4 is reached on occurence of a.
+ it returns 0 and the application moves to 1 on occurence of input c from state state 1.
+ the application returns 0 and the application moves to state 4 if  a occurs when it is in 0.
+ in state state 3 it returns 2 and the application moves to control state6 if  a occurs.
+ the application produces 2 and the system reaches location 6 if the input is c from 7.
+ the system produces 0 and it moves to location 1 if the input is c when the system is in control state3.
+ , 0 is produced and control state5 is reached on occurence of c in state state 6.
+ from state state 0 , 1 is produced and the application moves to control state3 if the input is c.
+ the application returns 0 and it moves to 7 on occurence of input b when the system is in control state0.
+ in state 4 , 2 is returned and it reaches control state1 if the input is c.
+ the application produces 2 and it reaches 5 if the input is b from state location 6.
+ the system returns 1 and the system moves to location 1 on occurence of b in state 3.
+ the output 0 is produced and 0 is reached on occurence of a when the system is in 2.

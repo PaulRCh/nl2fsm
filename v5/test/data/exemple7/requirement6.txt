@@ -1,0 +1,12 @@
+ when it is in location s0 , 1 is returned and state s5 is reached if the input is b.
+ , 1 is produced and it reaches s3 if the input is a from state s0.
+ the system produces 1 and control states4 is reached if the input is a in state control states3.
+ , 0 is produced and the application moves to control states1 if the input a occurs when the system is in s5.
+ it produces 1 and it moves to s2 if the input is b when the system is in s3.
+ in state location s4 the system produces 1 and location s5 is reached if the input b occurs.
+ the system produces 1 and it moves to control states1 if  a occurs from state s4.
+ , 1 is produced and state s3 is reached if the input b occurs from state s5.
+ when the system is in state s1 the output 1 is produced and the application reaches location s5 if the input is b.
+ when the system is in control states2 the application returns 0 and state s5 is reached on occurence of a.
+ when the system is in s2 the system returns 1 and it moves to s4 on occurence of b.
+ , 1 is produced and the application moves to s2 on occurence of input a when it is in location s1.

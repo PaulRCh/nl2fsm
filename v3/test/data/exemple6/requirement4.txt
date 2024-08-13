@@ -1,0 +1,4 @@
+ , 0 is returned and control states1 is reached if the input is a in state location s0.
+ , 0 is returned and it reaches control states0 on occurence of input a in state state s1.
+ , 1 is returned and state s1 is reached if  b occurs from location s1.
+ , 0 is returned and the application moves to s1 on occurence of input b in state location s0.

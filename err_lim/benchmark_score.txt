@@ -1,0 +1,10 @@
+For 1 states: 0/100 bad machines  0 0
+For 2 states: 19/100 bad machines 20 28
+For 3 states: 34/100 bad machines 42 40
+For 4 states: 49/100 bad machines
+For 5 states: 57/100 bad machines
+For 6 states: 58/100 bad machines
+For 7 states: 67/100 bad machines
+For 8 states: 69/100 bad machines
+For 9 states: 70/100 bad machines
+For 10 states: 79/100 bad machines
