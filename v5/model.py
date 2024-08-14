@@ -38,7 +38,7 @@ def generate_text(prompt):
     # print("generated text...")
     # return tokenizer.decode(output[0], skip_special_tokens=True)
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4o", # to change the model, change this line
         temperature=0.0,
         messages=[
             {"role": "system", "content": machine_role1},
