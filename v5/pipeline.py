@@ -39,24 +39,25 @@ def correction_pipeline(prompt, mm1, max_iter, cpt=0):
     product = pa.ProductMealyMachine(mm1,mm2)
     code, mm3 = product.make_product()
     # #print("product done \n")
+    print("producing checking sequence \n")
+    check_seq = sat.checking_sequence(mm2)
+    print("checking sequence done \n")
+    print("extracting input and output sequences \n")
+    input_seq = sat.extract_input_sequence_from_trace(check_seq)
+    output_seq_mm2 = sat.extract_output_sequence_from_trace(check_seq)
+    output_seq_mm1 = mm1.computeanouputsequence(input_seq)[0]
+    print("input and output sequences extracted \n")
+    #output_seq_user = prt.get_user_input_for_check(check_seq)
     if code == 0:
         #print("evaluating the product \n")
         mm3.set_name("product")
         #print("finding a path to a diff state")
         diff_paths = mm3.find_a_path_to_all_diff_states()
-        if diff_paths == []:
+        if diff_paths == [] and output_seq_mm1 == output_seq_mm2: #both tests are equivalent (diff_path is used for security purposes)
             dis.show_mealy_machine(mm3)
             print("Machine is correct! \n")
             return cpt
         else:
-            print("producing checking sequence \n")
-            check_seq = sat.checking_sequence(mm2)
-            print("checking sequence done \n")
-            print("extracting input and output sequences \n")
-            input_seq = sat.extract_input_sequence_from_trace(check_seq)
-            output_seq_mm1 = mm1.computeanouputsequence(input_seq)[0]
-            print("input and output sequences extracted \n")
-            #output_seq_user = prt.get_user_input_for_check(check_seq)
             np = rec.make_new_prompt_with_io_seq(input_seq, output_seq_mm1, prompt)
             print(f"new prompt: {np}\n")
             if cpt == max_iter:
