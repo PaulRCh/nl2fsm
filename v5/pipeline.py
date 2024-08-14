@@ -22,7 +22,7 @@ def generate_automaton_prompt(nbStates):
     maximum_iterations = len(mm1.get_states()) * len(mm1.get_input_alphabet())
     return prompt, mm1, maximum_iterations
 
-# Pipeline functions
+# Pipeline function
 
 def correction_pipeline(prompt, mm1, max_iter, cpt=0):
     print(f"Machine %d \n" % cpt)
@@ -66,33 +66,6 @@ def correction_pipeline(prompt, mm1, max_iter, cpt=0):
         assert(False)
 
 # Benchmark functions
-
-def pipeline_benchmark(nbstates):
-    score = 0
-    for i in range(100):
-        print(f"Machine %d \n" % i)
-        mm1, _, nl = prt.generate_automaton_prompt(nbstates)
-        mm1.set_name("original")
-        #dis.show_mealy_machine(mm1)
-        prompt = prt.nl_to_prompt(nl)
-        generated_text = mdl.generate_text(prompt)
-        cln.write_gen_text_to_csv_file(generated_text)
-        ia = mm1.get_input_alphabet()
-        oa = mm1.get_output_alphabet()
-        mm2 = mm.MealyMachine(ia,oa)
-        mm2.from_csv("generated_text.csv")
-        mm2.set_name("generated")
-        #dis.show_mealy_machine(mm2)
-        product = pa.ProductMealyMachine(mm1,mm2)
-        try:
-            mm3 = product.make_product()
-            mm3.set_name("product")
-            #dis.show_mealy_machine(mm3)
-            if len(mm3.diff_states_id) != 0:
-                    score += 1
-        except:
-            score += 1
-    return score
 
 def correction_benchmark(nbstates):
     score = {}

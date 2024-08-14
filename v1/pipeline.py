@@ -21,7 +21,7 @@ def generate_automaton_prompt(nbStates):
     maximum_iterations = len(mm1.get_states()) * len(mm1.get_input_alphabet())
     return prompt, mm1, maximum_iterations
 
-# Pipeline functions
+# Pipeline function
 
 def correction_pipeline(prompt, mm1, max_iter, cpt=0):
     print(f"Machine %d \n" % cpt)

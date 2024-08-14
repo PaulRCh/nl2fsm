@@ -1,5 +1,6 @@
 import mealymachineproduct.productalgorithms as pa
 
+# Function to generate a new prompt based on the errors
 
 def make_new_prompt(w_m1, w_m2, g_m1, prompt):
     new_prompt = prompt

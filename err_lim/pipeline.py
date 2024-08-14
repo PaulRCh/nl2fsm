@@ -21,7 +21,7 @@ def generate_automaton_prompt(nbStates):
     maximum_iterations = len(mm1.get_states()) * len(mm1.get_input_alphabet())
     return prompt, mm1, maximum_iterations
 
-# Pipeline functions
+# Function to generate text based on the prompt and characterize the errors
 
 def err_car(prompt, mm1):
     print("Machine")
@@ -50,33 +50,7 @@ def err_car(prompt, mm1):
         print("Machine is correct! \n")
         return 0, 0, 0, 0, correct_size
 
-# Benchmark functions
-
-def pipeline_benchmark(nbstates):
-    score = 0
-    for i in range(30):
-        print(f"Machine %d \n" % i)
-        mm1, _, nl = prt.generate_automaton_prompt(nbstates)
-        mm1.set_name("original")
-        #dis.show_mealy_machine(mm1)
-        prompt = prt.nl_to_prompt(nl)
-        generated_text = mdl.generate_text(prompt)
-        cln.write_gen_text_to_csv_file(generated_text)
-        ia = mm1.get_input_alphabet()
-        oa = mm1.get_output_alphabet()
-        mm2 = mm.MealyMachine(ia,oa)
-        mm2.from_csv("generated_text.csv")
-        mm2.set_name("generated")
-        #dis.show_mealy_machine(mm2)
-        product = pa.ProductMealyMachine(mm1,mm2)
-        code, mm3 = product.make_product()
-        if code == 0:
-            mm3.set_name("product")
-            if len(mm3.diff_states_id) != 0:
-                score += 1
-        else:
-            score += 1
-    return score
+# Function to characterize the errors
 
 def error_caracterization(nbstates):
     err1_moy = 0

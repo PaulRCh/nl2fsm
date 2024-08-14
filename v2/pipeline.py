@@ -1,4 +1,4 @@
-# Description: This file is the main file to run the pipeline. It generates an automaton prompt and generates text based on the prompt. The text is then cleaned and written to a csv file.
+# This file is not commented, because this version is not used nor efficient.
 
 import copy
 

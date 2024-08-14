@@ -1,7 +1,7 @@
-# Description: This file contains the code to generate text using the OpenAI GPT-3.5-turbo model. The model is used to generate a CSV representation of a finite state machine (FSM) from a natural language description.
+# Description: This file contains the code to generate text using the OpenAI GPT's models. The model GPT-4o is used to generate a CSV representation of a finite state machine (FSM) from a natural language description.
 
-# the commented lines allow the usage of the llama metha models, note that if you want to use a different version of llama you can change the model name in the commented lines, the uncommented lines are for the openai gpt-3.5-turbo model
-# gpt-3.5-turbo is the model that is being used in this project due to lack of calculation power of personal computers, local usage of models such as llama should be done with supercalculators or cloud services
+# the commented lines allow the usage of the llama metha models, note that if you want to use a different version of llama you can change the model name in the commented lines, the uncommented lines are for the openai gpt-4o model
+# gpt-4o is the model that is being used in this project due to lack of calculation power of personal computers, local usage of models such as llama should be done with supercalculators or cloud services
 
 # import torch
 # import torch.nn as nn
