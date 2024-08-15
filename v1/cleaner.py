@@ -1,4 +1,5 @@
 # Description: This file contains the functions that clean the generated text and write it to a csv file.
+# The commented and explained version of this file is present in the err_lim/cleaner.py file.
 
 def write_gen_text_to_csv_file(generated_text):
     res = ""

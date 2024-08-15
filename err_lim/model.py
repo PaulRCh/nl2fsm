@@ -12,16 +12,16 @@ from openai import OpenAI
 
 # from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer
 
-load_dotenv()
+load_dotenv() # Load the environment variables
 
 # Load the model
 
-api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI()
+api_key = os.getenv("OPENAI_API_KEY") # Get the OpenAI API key from the environment variables
+client = OpenAI() # Create an OpenAI client with the API key
 
-machine_role1 = "You are a professional software engineer working on a project to generate a CSV representation of a finite state machine (FSM) from a natural language description. You have been given the following description:"
+machine_role1 = "You are a professional software engineer working on a project to generate a CSV representation of a finite state machine (FSM) from a natural language description. You have been given the following description:" # Set the role of the machine
 
-machine_role2 = "You are a formal methods worker and you are testing Mealy Machines the following question has been given to you:"
+machine_role2 = "You are a formal methods worker and you are testing Mealy Machines the following question has been given to you:" # Set the role of the machine
 # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-hf", device_map = "auto", token= "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")
@@ -44,5 +44,5 @@ def generate_text(prompt):
             {"role": "system", "content": machine_role1},
             {"role": "user", "content": prompt},
         ],
-    )
-    return response.choices[0].message.content
+    ) # Generate text with the OpenAI model
+    return response.choices[0].message.content # Return the generated text

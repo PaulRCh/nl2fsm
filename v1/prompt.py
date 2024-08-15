@@ -6,6 +6,7 @@ import mealymachinegenerator.generatedescription as gd
 import mealymachinegenerator.generatormm as gm
 
 # Generate an automaton prompt
+# A complete description of this file is present in the err_lim/prompt.py file
 
 def generate_automaton_prompt(nbState):
     mm = gm.generaterandommm(nbState)

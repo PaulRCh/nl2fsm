@@ -1,10 +1,13 @@
-from collections import deque
+# Description: This file contains the implementation of the SAT-based algorithm for checking sequence generation
 
-from pycryptosat import Solver
+from collections import deque
 
 import display.affichage as af
 import mealymachinemodel.mealymachine as mm
 import mealymachineproduct.productalgorithms as pa
+from pycryptosat import Solver
+
+# Pycryptosat library is not natively installed in all environments, you may need to install it using pip
 
 
 class Var:

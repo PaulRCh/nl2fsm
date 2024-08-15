@@ -1,6 +1,7 @@
 import display.affichage as dis
 import prompt as prt
 
+# testing file only
 
 def test_generate_automaton_prompt():
     mm, dot, nl = prt.generate_automaton_prompt(5)

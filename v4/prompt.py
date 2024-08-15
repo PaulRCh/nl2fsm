@@ -1,4 +1,5 @@
 # Description: This file contains the functions to generate the prompt for the user to solve. It also contains the function to get the user input.
+# The commented and explained version of this file is present in the err_lim/prompt.py file.
 
 import random
 

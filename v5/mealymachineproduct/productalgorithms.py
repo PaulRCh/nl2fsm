@@ -75,7 +75,11 @@ class ProductMealyMachine(MealyMachine) :
         return tgt, output, diff
 
 
-    def make_product(self):
+    def make_product(self): # Function to make the product automaton, 
+        # if the product automaton is feasible, it returns 0 and the product automaton, 
+        # otherwise it returns -1 and the input output sequence explored that led to the error
+        # An error is raised if and only if the oracle and the generated automaton are not equivalent
+        # Allowing us to retrieve a distinguishing sequence anyway (only one, as opposed to the normal execution)
         # Initialisation
         initial_sequence = []
         src = ProductState(self.machine1.get_initial_state(),
@@ -114,10 +118,10 @@ class ProductMealyMachine(MealyMachine) :
                             aVisiter.append((tr.get_tgt(), new_input_output_seq))
         return (0, self)
 
-    def find_a_path_to_diff_state(self) :
+    def find_a_path_to_diff_state(self) : # Function to find a path to a diff state
         return self.find_a_path_to_one_state_in(self.diff_states_id)
     
-    def find_a_path_to_all_diff_states(self) :
+    def find_a_path_to_all_diff_states(self) : # Function to find a path to all diff states
         res = []
         for i in self.diff_states_id:
             single_set = {i}
@@ -125,38 +129,40 @@ class ProductMealyMachine(MealyMachine) :
         return res
             
     
-    def get_wrong_transitions(self):
-        exclusive_m1_tr = list()
-        exclusive_m2_tr = list()
-        diff = True
-        m1_tr = self.machine1.get_transitions()
-        m2_tr = self.machine2.get_transitions()
-        for tr1 in m1_tr:
-            for tr2 in m2_tr:
+    def get_wrong_transitions(self): # Function to get the wrong transitions
+        exclusive_m1_tr = list() # List of transitions that are in the original automaton but not in the generated automaton
+        exclusive_m2_tr = list() # List of transitions that are in the generated automaton but not in the original automaton
+        diff = True # Boolean to check if the transitions are different
+        m1_tr = self.machine1.get_transitions() # Get the transitions of the original automaton
+        m2_tr = self.machine2.get_transitions() # Get the transitions of the generated automaton
+        for tr1 in m1_tr: # For each transition in the original automaton
+            for tr2 in m2_tr: # For each transition in the generated automaton
                 if tr1.get_src().get_id() == tr2.get_src().get_id() and tr1.get_input() == tr2.get_input() and tr1.get_output() == tr2.get_output() and tr1.get_tgt().get_id() == tr2.get_tgt().get_id():
+                    # If the transitions are the same
+                    diff = False # Set the boolean to false
+                    break # Break the loop
+            if diff: # If the transition was not found in the generated automaton
+                exclusive_m1_tr.append(tr1) # Add the transition to the list of transitions that are in the original automaton but not in the generated automaton
+            diff = True # Reset the boolean
+        for tr2 in m2_tr: # For each transition in the generated automaton
+            for tr1 in m1_tr: # For each transition in the original automaton
+                if tr1.get_src().get_id() == tr2.get_src().get_id() and tr1.get_input() == tr2.get_input() and tr1.get_output() == tr2.get_output() and tr1.get_tgt().get_id() == tr2.get_tgt().get_id():
+                    # If the transitions are the same
                     diff = False
                     break
-            if diff:
-                exclusive_m1_tr.append(tr1)
-            diff = True
-        for tr2 in m2_tr:
-            for tr1 in m1_tr:
-                if tr1.get_src().get_id() == tr2.get_src().get_id() and tr1.get_input() == tr2.get_input() and tr1.get_output() == tr2.get_output() and tr1.get_tgt().get_id() == tr2.get_tgt().get_id():
-                    diff = False
-                    break
-            if diff:
-                exclusive_m2_tr.append(tr2)
-            diff = True
-        return exclusive_m1_tr, exclusive_m2_tr
+            if diff: # If the transition was not found in the original automaton
+                exclusive_m2_tr.append(tr2) # Add the transition to the list of transitions that are in the generated automaton but not in the original automaton
+            diff = True # Reset the boolean
+        return exclusive_m1_tr, exclusive_m2_tr # Return the list of transitions that are in the original automaton but not in the generated automaton and the list of transitions that are in the generated automaton but not in the original automaton
  
-    def get_good_transitions(self):
-        m2_tr = self.machine2.get_transitions()
-        _, wrong_m2 = self.get_wrong_transitions()
-        good_m2_tr = list()
-        for tr in m2_tr:
-            if tr not in wrong_m2:
-                good_m2_tr.append(tr)
-        return good_m2_tr
+    def get_good_transitions(self): # Function to get the good transitions
+        m2_tr = self.machine2.get_transitions() # Get the transitions of the generated automaton
+        _, wrong_m2 = self.get_wrong_transitions() # Get the wrong transitions in the generated automaton
+        good_m2_tr = list() # List of good transitions
+        for tr in m2_tr: # For each transition in the generated automaton
+            if tr not in wrong_m2: # If the transition is not in the list of wrong transitions
+                good_m2_tr.append(tr) # Add the transition to the list of good transitions
+        return good_m2_tr # Return the list of good transitions
 
 
 

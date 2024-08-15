@@ -1,5 +1,6 @@
 import mealymachineproduct.productalgorithms as pa
 
+# A complete description of this file is present in the err_lim/recurrence.py file
 
 def make_new_prompt(w_m1, w_m2, g_m1, prompt):
     new_prompt = prompt

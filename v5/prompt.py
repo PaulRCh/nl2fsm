@@ -1,5 +1,5 @@
 # Description: This file contains the functions to generate the prompt for the user to solve. It also contains the function to get the user input.
-
+# The commented and explained version of this file is present in the err_lim/prompt.py file except for the get_user_input_for_check function.
 import random
 
 import mealymachinegenerator.generatedescription as gd
@@ -26,13 +26,13 @@ def nl_to_prompt2(nl):
 def get_user_input():
     return input("Please enter a description of an automaton or press enter to generate a random one: ")
 
-def get_user_input_for_check(check_seq):
-    inp = sat.extract_input_sequence_from_trace(check_seq)
-    out = sat.extract_output_sequence_from_trace(check_seq)
-    print(f"is the output sequence {out} correct for the input sequence {inp}?")
-    user = input("(yes/no): ")
-    if user == "no":
-        print("Please enter the correct output sequence: ")
-        return -1,input()
-    else:
-        return 0,None
+def get_user_input_for_check(check_seq): # Get the user description of an automaton or generate a random one
+    inp = sat.extract_input_sequence_from_trace(check_seq) # Extract the input sequence from the trace
+    out = sat.extract_output_sequence_from_trace(check_seq) # Extract the output sequence from the trace
+    print(f"is the output sequence {out} correct for the input sequence {inp}?") # Ask the user if the output sequence is correct
+    user = input("(yes/no): ") # Get the user input
+    if user == "no": # If the user input is no
+        print("Please enter the correct output sequence: ") # Ask the user to enter the correct output sequence
+        return -1,input() # Return -1 and the correct output sequence
+    else: # If the user input is yes
+        return 0,None # Return 0 and None

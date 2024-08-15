@@ -4,6 +4,7 @@ from mealymachinemodel.mealymachine import MealyMachine
 from mealymachinemodel.state import State
 from mealymachinemodel.transition import Transition
 
+# A more commented version of the code is present in the v5/mealymachineproduct/productalgorithms.py file
 
 class ProductState(State):
     state1 : State
