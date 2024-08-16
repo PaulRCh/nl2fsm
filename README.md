@@ -6,3 +6,4 @@ The second and third versions are not relevant as they contain inconclusive tria
 The fourth version corresponds to the distinguishing-sequences-based method.
 The fifth version corresponds to the checking-sequence-based method.
 For each version, the main pipeline file is: "pipeline.py". It contains the code necessary to run the pipeline.
+Fault_model_approach.zip contains the module for the fault model approach version of the repair methods
