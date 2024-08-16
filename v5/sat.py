@@ -1,4 +1,6 @@
 # Description: This file contains the implementation of the SAT-based algorithm for checking sequence generation
+# The algorithm is based on the paper "FSM inference and checking sequence construction are two sides of the same coin" by Alexandre Petrenko, Florent Avellaneda, Roland Groz and Catherine Oriat
+# Some comments refer directly to the paper mentionned above, therefore it is recommended to have it at hand while reading the comments
 
 from collections import deque
 
