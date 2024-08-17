@@ -26,9 +26,9 @@ machine_role1 = "You are a professional software engineer working on a project t
 machine_role2 = "You are a formal methods worker and you are testing Mealy Machines the following question has been given to you:"
 # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-hf", device_map = "auto", token= "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")
+# model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-hf", device_map = "auto", token= "") Please add hf token to use llama models
 
-# tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf", token= "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")
+# tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf", token= "") Please add hf token to use llama models
 
 # Generate text with the model
 
